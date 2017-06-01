@@ -28,8 +28,13 @@ def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
 
     text = text.lower()
     text = text.split()
+    
+    #print(text[:100])
 
     vocab_to_int, int_to_vocab = create_lookup_tables(text)
+    
+    #print("||semicolon||" in vocab_to_int)
+    #print("i'm" in vocab_to_int)
     int_text = [vocab_to_int[word] for word in text]
     pickle.dump((int_text, vocab_to_int, int_to_vocab, token_dict), open('preprocess.p', 'wb'))
 
