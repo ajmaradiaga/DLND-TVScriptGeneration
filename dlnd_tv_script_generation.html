@@ -11922,7 +11922,6 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 <span class="sd">    :param text: The text of tv scripts split into words</span>
 <span class="sd">    :return: A tuple of dicts (vocab_to_int, int_to_vocab)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># TODO: Implement Function</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
     <span class="n">vocab</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     
@@ -11993,7 +11992,6 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 <span class="sd">    Generate a dict to turn punctuation into a token.</span>
 <span class="sd">    :return: Tokenize dictionary where the key is the punctuation and the value is the token</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># TODO: Implement Function</span>
     <span class="n">lookup</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;.&quot;</span><span class="p">:</span> <span class="s2">&quot;||period||&quot;</span><span class="p">,</span> \
              <span class="s2">&quot;,&quot;</span><span class="p">:</span> <span class="s2">&quot;||comma||&quot;</span><span class="p">,</span> \
              <span class="s1">&#39;&quot;&#39;</span><span class="p">:</span> <span class="s2">&quot;||quotation_mark||&quot;</span><span class="p">,</span> \
@@ -12488,7 +12486,6 @@ Tests Passed
 <span class="sd">    :param embed_dim: Number of embedding dimensions</span>
 <span class="sd">    :return: Tuple (Logits, FinalState)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># TODO: Implement Function</span>
     <span class="n">inputs</span> <span class="o">=</span> <span class="n">get_embed</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">)</span>
     <span class="n">outputs</span><span class="p">,</span> <span class="n">final_state</span> <span class="o">=</span> <span class="n">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">inputs</span><span class="p">)</span>
     
